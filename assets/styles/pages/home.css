@@ -1,0 +1,176 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--green-light) 0%, var(--yellow-light) 100%);
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  animation: float 20s infinite ease-in-out;
+}
+
+.blob-1 {
+  width: 300px;
+  height: 300px;
+  top: 20%;
+  right: 10%;
+  animation-delay: 0s;
+}
+
+.blob-2 {
+  width: 200px;
+  height: 200px;
+  bottom: 20%;
+  left: 10%;
+  animation-delay: -10s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+.hero-content {
+  z-index: 2;
+  color: white;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  margin-bottom: 1rem;
+  animation-delay: 0.2s;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  animation-delay: 0.4s;
+}
+
+.hero-content > * {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.about-snapshot {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.featured-products {
+  padding: 4rem 0;
+  background: var(--bg-white);
+}
+
+.carousel {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.product-card {
+  min-width: 300px;
+  margin: 0 1rem;
+  flex-shrink: 0;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.8);
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.prev { left: 10px; }
+
+.next { right: 10px; }
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--text-light);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.dot.active {
+  background: var(--green-primary);
+}
+
+.why-choose-us {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cta {
+  padding: 4rem 0;
+  background: var(--green-primary);
+  color: white;
+  text-align: center;
+}
+
+.cta .btn-primary {
+  background: white;
+  color: var(--green-primary);
+}
+
+.cta .btn-primary:hover {
+  background: var(--yellow);
+  color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .carousel-track {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    min-width: 100%;
+    margin: 1rem 0;
+  }
+}
