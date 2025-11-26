@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Rayhan Juices</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/global.css">
+    <link rel="stylesheet" href="assets/styles/pages/products.css">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+    <header class="header">
+        <!-- Same header -->
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="https://via.placeholder.com/150x50/4CAF50/FFFFFF?text=RAYHAN" alt="Rayhan Juices Logo" width="150" height="50">
+                </a>
+                <nav class="nav">
+                    <button class="hamburger" aria-label="Toggle navigation menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="mission.html" class="nav-link">Our Mission</a></li>
+                        <li><a href="sustainability.html" class="nav-link">Sustainability</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero reveal-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Discover Our Delicious Flavors</h1>
+                    <p>A range of fresh juices made from Libya's best fruits.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-filters container reveal-section">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="citrus">Citrus</button>
+            <button class="filter-btn" data-filter="tropical">Tropical</button>
+            <button class="filter-btn" data-filter="berry">Berry</button>
+        </section>
+
+        <section class="products-grid container reveal-section">
+            <div class="product-card" data-category="citrus">
+                <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=400" alt="Orange Bliss">
+                <h3>Orange Bliss</h3>
+                <p>Freshly squeezed oranges bursting with vitamin C.</p>
+                <ul class="highlights">
+                    <li>100% Natural</li>
+                    <li>No Sugar Added</li>
+                </ul>
+                <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+            <div class="product-card" data-category="tropical">
+                <img src="https://images.unsplash.com/photo-1567306220558-28e3608a4fcc?w=400" alt="Mango Tango">
+                <h3>Mango Tango</h3>
+                <p>Smooth mango flavor from local groves.</p>
+                <ul class="highlights">
+                    <li>Rich in Vitamins</li>
+                    <li>Freshly Pressed</li>
+                </ul>
+                <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+            <div class="product-card" data-category="berry">
+                <img src="https://images.unsplash.com/photo-1546548970-146fdb0116b9?w=400" alt="Strawberry Fields">
+                <h3>Strawberry Fields</h3>
+                <p>Sweet and juicy strawberries.</p>
+                <ul class="highlights">
+                    <li>Antioxidant Rich</li>
+                    <li>Pure Delight</li>
+                </ul>
+                <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+            <div class="product-card" data-category="tropical">
+                <img src="https://images.unsplash.com/photo-1619586324149-0d4a419b4f80?w=400" alt="Pineapple Punch">
+                <h3>Pineapple Punch</h3>
+                <p>Tangy pineapple refreshment.</p>
+                <ul class="highlights">
+                    <li>Enzyme Packed</li>
+                    <li>Exotic Taste</li>
+                </ul>
+                <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+            <div class="product-card" data-category="citrus">
+                <img src="https://images.unsplash.com/photo-1549948900-fad8d85a3fd3?w=400" alt="Lemon Zest">
+                <h3>Lemon Zest</h3>
+                <p>Zingy lemon for energy boost.</p>
+                <ul class="highlights">
+                    <li>Detoxifying</li>
+                    <li>Refreshing</li>
+                </ul>
+                <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+            <div class="product-card" data-category="berry">
+                <img src="https://images.unsplash.com/photo-1580052614034-d1f91f1e9124?w=400" alt="Berry Burst">
+                <h3>Berry Burst</h3>
+                <p>Mixed berries explosion.</p>
+                <ul class="highlights">
+                    <li>Superfood Blend</li>
+                    <li>Immune Boost</li>
+                </ul>
+                <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+            <div class="product-card" data-category="tropical">
+                <img src="https://images.unsplash.com/photo-1542838132-92ffcb3f3aa5?w=400" alt="Kiwi Kick">
+                <h3>Kiwi Kick</h3>
+                <p>Fuzzy kiwi tang.</p>
+                <ul class="highlights">
+                    <li>Vitamin C Power</li>
+                    <li>Unique Flavor</li>
+                </ul>
+                <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+            <div class="product-card" data-category="tropical">
+                <img src="https://images.unsplash.com/photo-1571877220302-945304faaf9c?w=400" alt="Watermelon Wave">
+                <h3>Watermelon Wave</h3>
+                <p>Hydrating watermelon refresh.</p>
+                <ul class="highlights">
+                    <li>Hydration Hero</li>
+                    <li>Summer Essential</li>
+                </ul>
+                <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Same footer -->
+    <footer class="footer">
+        <!-- Footer content same as index -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rayhan Juices</h3>
+                    <p>Benghazi, Libya</p>
+                    <p>info@rayhan.ly</p>
+                    <p>+218 92 123 4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rayhan Juices. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/global.js" defer></script>
+</body>
+</html>
