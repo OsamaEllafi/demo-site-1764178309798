@@ -1,0 +1,71 @@
+.hero {
+  min-height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1576091160399-1d65c279c975?w=2000');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+}
+
+.history {
+  padding: 4rem 0;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+  width: 12px;
+  height: 12px;
+  background: var(--green-primary);
+  border-radius: 50%;
+}
+
+.year {
+  font-weight: 700;
+  color: var(--green-primary);
+  font-size: 1.2rem;
+}
+
+.team {
+  padding: 4rem 0;
+  background: var(--bg-white);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.values {
+  padding: 4rem 0;
+  text-align: center;
+}
