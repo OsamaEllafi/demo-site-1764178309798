@@ -1,0 +1,65 @@
+.hero {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--orange), var(--yellow));
+  color: white;
+  text-align: center;
+}
+
+.products-filters {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.5rem;
+  background: var(--bg-white);
+  border: 2px solid var(--green-primary);
+  color: var(--green-primary);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--green-primary);
+  color: white;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  text-align: left;
+}
+
+.highlights {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.highlights li {
+  padding: 0.25rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.highlights li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--green-primary);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
